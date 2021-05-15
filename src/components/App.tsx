@@ -14,7 +14,7 @@ export class App extends React.Component<Props, State> {
             <div className={"text-center max-w-screen-lg xl:max-w-screen-xl mx-auto"}>
                 <div className={"flex flex-col items-center justify-center h-screen"}>
                     <div className={"p-1 border-2 border-blu rounded-full mb-3"}>
-                        <img className={"w-72 h-72 rounded-full bg-blu"}
+                        <img className={"w-64 h-64 rounded-full bg-blu"}
                              src={profile}
                              alt={"profile image"}
                         />
