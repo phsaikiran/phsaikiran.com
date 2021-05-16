@@ -5,18 +5,18 @@ type Props = {}
 type State = {}
 
 class ProfileImage extends React.Component<Props, State> {
-    state: State = {};
+  state: State = {};
 
-    render = () => {
-        return (
-            <img className={"w-64 h-64 rounded-full"}
-                 src={profile}
-                 alt={"profile image"}
-                 height={256}
-                 width={256}
-            />
-        );
-    }
+  render = () => {
+    return (
+      <img className={"w-64 h-64 rounded-full"}
+           src={profile}
+           alt={"profile image"}
+           height={256}
+           width={256}
+      />
+    );
+  };
 }
 
 export default ProfileImage;
