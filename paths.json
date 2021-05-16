@@ -13,6 +13,9 @@
       ],
       "images/*": [
         "src/images/*"
+      ],
+      "profile/*": [
+        "src/components/profile/*"
       ]
     }
   }

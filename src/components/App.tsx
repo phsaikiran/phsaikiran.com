@@ -1,12 +1,14 @@
-import React from "react";
-import profile from "images/profile.jpg";
+import React, { Suspense } from "react";
 import linkedin from "images/linkedin.svg";
 import github from "images/github.svg";
+import profilePlaceholder from "images/profile-placeholder.jpg";
+
+const ProfileImage = React.lazy(() => import("profile/ProfileImage"));
 
 type Props = {}
 type State = {}
 
-export class App extends React.Component<Props, State> {
+class App extends React.Component<Props, State> {
     state: State = {};
 
     render = () => {
@@ -14,12 +16,15 @@ export class App extends React.Component<Props, State> {
             <div className={"text-center max-w-screen-lg xl:max-w-screen-xl mx-auto"}>
                 <div className={"flex flex-col items-center justify-center h-screen"}>
                     <div className={"p-1 border-2 border-blu rounded-full mb-3"}>
-                        <img className={"w-64 h-64 rounded-full bg-blu"}
-                             src={profile}
-                             alt={"profile image"}
-                             height={256}
-                             width={256}
-                        />
+                        <Suspense fallback={
+                            <img className={"w-64 h-64 rounded-full bg-blu"}
+                                 src={profilePlaceholder}
+                                 alt={"profile image"}
+                                 height={256}
+                                 width={256}
+                            />}>
+                            <ProfileImage/>
+                        </Suspense>
                     </div>
                     <div className={"text-5xl pt-10 text-blu"}><code>P H Sai Kiran</code></div>
                     <div className={"text-2xl pb-10 text-blu"}><code>Applications Engineer at Oracle</code></div>
@@ -30,6 +35,7 @@ export class App extends React.Component<Props, State> {
                                  alt={"linkedin logo"}
                                  height={40}
                                  width={40}
+                                 loading={"lazy"}
                             />
                         </a>
                         <a href={"https://github.com/phsaikiran"} target={"_blank"} rel={"noreferrer"}>
@@ -38,6 +44,7 @@ export class App extends React.Component<Props, State> {
                                  alt={"github logo"}
                                  height={40}
                                  width={40}
+                                 loading={"lazy"}
                             />
                         </a>
                     </div>
@@ -46,3 +53,5 @@ export class App extends React.Component<Props, State> {
         );
     }
 }
+
+export default App;
