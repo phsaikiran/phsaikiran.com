@@ -9,7 +9,7 @@ class ProfileImage extends React.Component<Props, State> {
 
     render = () => {
         return (
-            <img className={"w-64 h-64 rounded-full bg-blu"}
+            <img className={"w-64 h-64 rounded-full"}
                  src={profile}
                  alt={"profile image"}
                  height={256}

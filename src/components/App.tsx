@@ -17,7 +17,7 @@ class App extends React.Component<Props, State> {
                 <div className={"flex flex-col items-center justify-center h-screen"}>
                     <div className={"p-1 border-2 border-blu rounded-full mb-3"}>
                         <Suspense fallback={
-                            <img className={"w-64 h-64 rounded-full bg-blu"}
+                            <img className={"w-64 h-64 rounded-full"}
                                  src={profilePlaceholder}
                                  alt={"profile image"}
                                  height={256}
