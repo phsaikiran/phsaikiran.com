@@ -35,7 +35,6 @@ class App extends React.Component<Props, State> {
                    alt={"linkedin logo"}
                    height={40}
                    width={40}
-                   loading={"lazy"}
               />
             </a>
             <a href={"https://github.com/phsaikiran"} target={"_blank"} rel={"noreferrer"}>
@@ -44,7 +43,6 @@ class App extends React.Component<Props, State> {
                    alt={"github logo"}
                    height={40}
                    width={40}
-                   loading={"lazy"}
               />
             </a>
           </div>
