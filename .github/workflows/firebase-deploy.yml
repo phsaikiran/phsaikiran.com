@@ -15,6 +15,7 @@ jobs:
       - run: yarn install && yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
+          target: phsaikiran-com-d250f
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PHSAIKIRAN_COM_D250F }}'
           projectId: phsaikiran-com-d250f
