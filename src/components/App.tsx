@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import linkedin from "images/linkedin.svg";
 import github from "images/github.svg";
+import resume from "images/resume.svg";
 import profilePlaceholder from "images/profile-placeholder.jpg";
 
 const ProfileImage = React.lazy(() => import("profile/ProfileImage"));
@@ -26,9 +27,17 @@ class App extends React.Component<Props, State> {
               <ProfileImage />
             </Suspense>
           </div>
-          <div className={"text-5xl pt-10 text-blu"}><code>P H Sai Kiran</code></div>
-          <div className={"text-2xl pb-10 text-blu"}><code>Applications Engineer at Oracle</code></div>
+          <div className={"text-5xl pt-10 text-blu"}><code>H Sai Kiran Prudhivi</code></div>
+          <div className={"text-2xl pb-10 text-blu"}><code>MS Computer Science at UTD</code></div>
           <div className={"space-x-5"}>
+            <a href={"/phsaikiran-resume.pdf"} target={"_blank"} rel={"noreferrer"}>
+              <img className={"w-10 h-10 inline-block"}
+                   src={resume}
+                   alt={"resume pdf"}
+                   height={40}
+                   width={40}
+              />
+            </a>
             <a href={"https://www.linkedin.com/in/phsaikiran/"} target={"_blank"} rel={"noreferrer"}>
               <img className={"w-10 h-10 inline-block"}
                    src={linkedin}
