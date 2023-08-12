@@ -1,26 +1,80 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
-export default function Home() {
-    return (
-        <div className={"text-center max-w-screen-lg xl:max-w-screen-xl mx-auto"}>
-            <div className={"flex flex-col items-center justify-center h-screen"}>
-                <div className={"p-1 border-2 border-blu rounded-full mb-3"}>
-                    <Image src="/profile.jpg" alt="profile picture" className="w-32 h-32 rounded-full" width={800} height={800}/>
-                </div>
-                <div className={"text-5xl pt-10 text-blu"}><code>Sai Prudhivi</code></div>
-                <div className={"text-2xl pb-10 text-blu"}><code>MS Computer Science @ UT Dallas</code></div>
-                <div className={"space-x-5"}>
-                    <a href={"/Sai_Prudhivi_Resume.pdf"} target={"_blank"} rel={"noreferrer"}>
-                        <Image src="/resume.svg" alt="resume" width={40} height={40} className="inline-block"/>
-                    </a>
-                    <a href={"https://www.linkedin.com/in/phsaikiran/"} target={"_blank"} rel={"noreferrer"}>
-                        <Image src="/linkedin.svg" alt="linkedin" width={40} height={40} className="inline-block"/>
-                    </a>
-                    <a href={"https://github.com/phsaikiran"} target={"_blank"} rel={"noreferrer"}>
-                        <Image src="/github.svg" alt="github" width={40} height={40} className="inline-block"/>
-                    </a>
-                </div>
-            </div>
+import { name, about, avatar } from './info'
+import { ArrowIcon, EmailIcon, GitHubIcon, LinkedInIcon, ResumeIcon } from "@/app/icons";
+import React from "react";
+
+export default async function HomePage() {
+  return (
+    <section>
+      <h1 className="font-bold text-3xl font-serif">{name}</h1>
+      <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
+        {about()}
+      </p>
+      <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
+        <Image
+          alt={name}
+          className="rounded-full grayscale"
+          src={avatar}
+          placeholder="blur"
+          width={100}
+          priority
+        />
+        <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/phsaikiran/"
+            className="flex items-center gap-2"
+          >
+            <LinkedInIcon/>
+            LinkedIn
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/phsaikiran"
+            className="flex items-center gap-2"
+          >
+            <GitHubIcon/>
+            GitHub
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="mailto:hxp220011@utdallas.edu"
+            className="flex items-center gap-2"
+          >
+            <EmailIcon/>
+            Email
+          </a>
         </div>
-    )
+      </div>
+      <ul
+        className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
+        <li>
+          <a
+            className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="Sai_Prudhivi_resume.pdf"
+          >
+            <ArrowIcon/>
+            <p className="h-7">download my resume</p>
+          </a>
+        </li>
+        <li>
+          <a
+            className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/phsaikiran/"
+          >
+            <ArrowIcon/>
+            <p className="h-7">connect with me on LinkedIn</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+  );
 }
