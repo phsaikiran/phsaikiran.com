@@ -20,7 +20,7 @@ export default function AboutPage() {
         </p>
         <hr/>
         <p>
-          During my time as an <b>Applications Engineer at Oracle</b> in Bangalore, India, I had the privilege
+          During my time as an <b>Applications Engineer at Oracle</b>, I had the privilege
           to work on a variety of projects, ranging from enhancing existing Java/Spring applications to
           architecting and developing full-stack solutions from scratch. Leveraging my proficiency in
           technologies like Java, Oracle JET, Docker, Kubernetes, and Jenkins, I championed containerization
