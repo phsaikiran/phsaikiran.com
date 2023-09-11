@@ -8,7 +8,7 @@ export const about = () => {
       <b>Hey, {"I'm"} Sai!</b><br/>
       An experienced computer scientist with over 4 years of expertise in full-stack development, specializing in
       intelligent systems and data science. I have demonstrated success in impactful software solutions and enhancing
-      application security.<br/>
+      application security, driven by innovation and continuous improvement.<br/>
     </>
   );
 };
