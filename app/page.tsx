@@ -17,7 +17,7 @@ export default async function HomePage() {
           className="rounded-full"
           src={avatar}
           placeholder="blur"
-          width={100}
+          width={128}
           priority
         />
         <div className="mt-2 ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
