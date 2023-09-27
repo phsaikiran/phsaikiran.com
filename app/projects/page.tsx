@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div className="flex flex-col">
           <a href={"#"} target="_blank" className="inline-flex items-center">
             <b className="mr-1">Movie Recommendation System</b>
-            <ArrowIcon/>
+            {/*<ArrowIcon/>*/}
           </a>
           <div><small>Apr 2023 - May 2023</small></div>
         </div>
@@ -27,7 +27,7 @@ export default function AboutPage() {
         <div className="flex flex-col">
           <a href={"#"} target="_blank" className="inline-flex items-center">
             <b className="mr-1">Piano Tutor – Piano Keys Object Detection</b>
-            <ArrowIcon/>
+            {/*<ArrowIcon/>*/}
           </a>
           <div><small>Feb 2023 - May 2023</small></div>
         </div>
@@ -38,7 +38,7 @@ export default function AboutPage() {
         <div className="flex flex-col">
           <a href={"https://github.com/phsaikiran/ecommerce"} target="_blank" className="inline-flex items-center">
             <b className="mr-1">E-commerce Platform – Database Design</b>
-            <ArrowIcon/>
+            {/*<ArrowIcon/>*/}
           </a>
           <div><small>Jan 2023 - May 2023</small></div>
         </div>
@@ -50,7 +50,7 @@ export default function AboutPage() {
           <a href={"https://github.com/phsaikiran/LotteryScheduler"} target="_blank"
              className="inline-flex items-center">
             <b className="mr-1">Lottery Scheduler for xv6 – UNIX-like OS</b>
-            <ArrowIcon/>
+            {/*<ArrowIcon/>*/}
           </a>
           <div><small>Aug 2022 - Dec 2022</small></div>
         </div>
@@ -61,7 +61,7 @@ export default function AboutPage() {
         <div className="flex flex-col">
           <a href={"#"} target="_blank" className="inline-flex items-center">
             <b className="mr-1">A 4-Link Drawing Robot</b>
-            <ArrowIcon/>
+            {/*<ArrowIcon/>*/}
           </a>
           <div><small>Aug 2017 - May 2019</small></div>
         </div>
@@ -72,7 +72,7 @@ export default function AboutPage() {
         <div className="flex flex-col">
           <a href={"#"} target="_blank" className="inline-flex items-center">
             <b className="mr-1">Adaptive Control of a Robot using Reinforcement Learning</b>
-            <ArrowIcon/>
+            {/*<ArrowIcon/>*/}
           </a>
           <div><small>May 2017 - July 2017</small></div>
         </div>
