@@ -40,7 +40,7 @@ export default async function HomePage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="mailto:hxp220011@utdallas.edu"
+            href="mailto:sai.k.prudhivi@gmail.com"
             className="flex items-center gap-2"
           >
             <EmailIcon/>
